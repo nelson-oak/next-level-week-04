@@ -7,6 +7,9 @@ Projeto para cálculo de Net Promoter Score (pesquisa de satisfação).
 
 | Entidades | Atributos |
 | - | - |
+| users | id, name, email, created_at |
+| surveys | id, title, description, created_at |
+| surveys_users | id, user_id, survey_id, value, create_at |
 
 
 ## Funcionalidades
@@ -16,14 +19,21 @@ Projeto para cálculo de Net Promoter Score (pesquisa de satisfação).
 - Envio de email para mandar as perguntas
 - Rota para responder as perguntas
 
+## Recursos
+
+- Express
+- Typeorm
+- Sqlite
+
 ## Iniciando o projeto
 
 Após clonar o projeto, é necessário atualizar as dependências.
 
-### Comandos para atualizar e executar a aplicação
+### Comandos para baixar dependências, executar migrations e iniciar a aplicação
 
 ```bash
 yarn
+yarn typeorm migration:run
 yarn dev
 ```
 
