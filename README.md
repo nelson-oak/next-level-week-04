@@ -24,6 +24,8 @@ Projeto para cálculo de Net Promoter Score (pesquisa de satisfação).
 - Express
 - Typeorm
 - Sqlite
+- Nodemailer
+- Handlebars
 
 ## Iniciando o projeto
 
@@ -38,3 +40,5 @@ yarn dev
 ```
 
 ### Configurações adicionais
+
+1. Criar arquivo .env na raiz do projeto, com o conteúdo de .env.example
